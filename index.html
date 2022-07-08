@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Portafolio Alexis Pinilla</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+
+    <body>
+        <!-- bloque de datos personales-->
+        <div id="datos" class="datosPersonales">
+            <div class="imgZoom">
+                <img src="img/logot.png" alt="">
+            </div>  
+            <ul id="listaDatos"></ul>
+        </div>
+        <div class="tituloIntereses">
+            <h1>Mis Intereses</h1>
+        </div>
+        <!-- Comenzando con el bloque de slider -->
+        <div class="container-slider">
+            <!-- Configuración del slider, el id es para javascript -->
+            <div class="slider" id="slider">
+                <!-- Seccion 1 del slider, imagen 1 -->
+                <div class="slider_section">
+                    <img src="img/fotoslider1.jpg">
+                    <a class="link1" href="https://www.youtube.com/watch?v=MOtKAXxuvt0" target="_blank">Info</a>
+                </div>
+                <!-- seccion 2 del slider, imagen 2 -->
+                <div class="slider_section">
+                    <img src="img/fotoslider2.jpg">
+                    <a class="link2" href="https://www.cultura.gob.ar/historia-mitos-y-secretos-del-mate_6821/" target="_blank">Info</a>
+                </div>
+                <!-- seccion 3 del slider, imagen 3 -->
+                <div class="slider_section">
+                    <img src="img/fotoslider3.jpg">
+                    <a class="link3" href="https://www.cadenadial.com/2021/sabes-que-beneficios-tiene-montar-a-caballo-para-tu-cuerpo-y-tu-mente-239241.html" target="_blank">Info</a>
+                </div>
+                
+            </div>
+            <!-- configurando nuestros botones de izquierda y derecha-->
+            <div class="slider_btn slider_btn_right" id="btn-right">></div>
+            <div class="slider_btn slider_btn_left" id="btn-left"><</div>
+        </div>
+
+        <!--Comenzando el bloque de "MIs lenguajes"-->
+        <div class="tituloLenguajes">
+            <h1>Mis Lenguajes</h1>
+        </div>
+
+        <!-- Bloque con todo el contenido e imágenes del carrusel de imágenes -->
+        <div class="bloqueCarrusel">
+            <div class="carruselContent">
+                <!-- Cada uno de estos div contendrá las imágenes, en total, son solo 6 diferentes -->
+                <!-- se creo un total de 18 div, para generar un efecto de infinito, ya que cuando terminen las primeras 6, se reproduciran las 6 siguientes y asi sucesivamente -->
+                <div class="carou">
+                    <img src="img/lenguajeC++.png" alt="">
+                </div>
+                <div class="carou">
+                    <img src="img/lenguajec.png" alt="">
+                </div>
+                <div class="carou">
+                    <img src="img/lenguajeJava.png" alt="">
+                </div>
+                <div class="carou">
+                    <img src="img/lenguajeJS.png" alt="">
+                </div>
+                <div class="carou">
+                    <img src="img/lenguajePHP.png" alt="">
+                </div>
+                <div class="carou">
+                    <img src="img/lenguajePython.png" alt="">
+                </div>
+                <div class="carou">
+                    <img src="img/lenguajeC++.png" alt="">
+                </div>
+                <div class="carou">
+                    <img src="img/lenguajec.png" alt="">
+                </div>
+                <div class="carou">
+                    <img src="img/lenguajeJava.png" alt="">
+                </div>
+                <div class="carou">
+                    <img src="img/lenguajeJS.png" alt="">
+                </div>
+                <div class="carou">
+                    <img src="img/lenguajePHP.png" alt="">
+                </div>
+                <div class="carou">
+                    <img src="img/lenguajePython.png" alt="">
+                </div>
+                <div class="carou">
+                    <img src="img/lenguajeC++.png" alt="">
+                </div>
+                <div class="carou">
+                    <img src="img/lenguajec.png" alt="">
+                </div>
+                <div class="carou">
+                    <img src="img/lenguajeJava.png" alt="">
+                </div>
+                <div class="carou">
+                    <img src="img/lenguajeJS.png" alt="">
+                </div>
+                <div class="carou">
+                    <img src="img/lenguajePHP.png" alt="">
+                </div>
+                <div class="carou">
+                    <img src="img/lenguajePython.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!--Comenzando el bloque de "MIs Conocimientos"-->
+        <div class="tituloConocimientos">
+            <h1>Mis Conocimientos</h1>
+        </div>
+        <div id="conocimientos">
+            <!-- comienzo de la lista desordenada, los "li" se irán rellenando en JavaScript-->
+            <ul id="listaConocimientos"></ul>
+        </div>
+
+        <!-- Comenzando el bloque de validar el rut-->
+        <div class="validaRUT">
+            <h1>Validador de RUT</h1>
+        </div>
+
+        <!-- Validador de RUT-->
+        <div class="box">
+            <form name="formulario">
+                <!--Label rut, que llama a la funcion checkRut a través de un required (required hará obligatoria la respuesta a nuestro campo) oninput, se activará cuando pulsemos nuestro button-->
+                <label>RUT</label>
+                <input type="text" id="rut" name="rut" required oninput="checkRut(this)" placeholder="Formato: xx.xxx.xxx-x">
+                <!--boton del tipo submit-->
+                <button id="validar" type="submit">Validar</button>    
+            </form>
+        </div>
+    </body>
+
+    <!-- Llamando a nuestro archivo JS-->
+    <script src="js/main.js"></script>
+</html>

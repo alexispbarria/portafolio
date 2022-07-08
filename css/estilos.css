@@ -1,0 +1,377 @@
+body {
+    background-color: #eee;
+    height: 100%;
+    
+}
+/*Modificando div que pertenece al bloque datos personales*/
+.datosPersonales {
+    /*generando display flex para que los contenidos se vayan a un lado*/
+    display: flex;
+    /*generando margen por dentro del bloque */
+    padding: 15px;
+    /*generando margen por fuera del bloque*/
+    margin: 15px;
+    
+    justify-content: center;
+    /*alineando los contenidos hacia el centro*/
+    align-items: center;
+
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* modificando el logo imagen que va dentro del primer div de datos personales*/
+.datosPersonales .imgZoom img {
+    /*asignado altura y ancho*/
+    width: 100px;
+    height: 100px;       
+    transition: transform .2s;
+}
+
+/*modificando las etiquetas <li> ingresadas en javascript*/
+.datosPersonales #listaDatos li {
+    /*color de texto*/
+    color: black;
+    /*tipo de fuente de texto*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*aplicando negrita al texto*/
+    font-weight: 700;
+}
+
+/*Dando efecto al logo: efecto zoom (cada vez que el mouse se ponga encima, a través de hover)*/
+.datosPersonales img:hover {
+    /*ejerciendo zoom en la imágen al pasar por encima*/
+    -ms-transform: scale(1.3); 
+    -webkit-transform: scale(1.3); 
+    transform: scale(1.3); 
+    cursor: pointer;
+}
+
+
+
+/*****************************************************************************************************************/
+
+.tituloIntereses {
+    display: flex;
+    justify-content: center;
+}
+
+/*Configurando el botón del slider.*/
+.slider_section .link1 {
+    /*Otorgando posicion relativa para ajustar a nuestro gusto el boton dentro del slider*/
+    position: relative;
+    /*Distancia desde el bottom*/
+    bottom: 50px;
+    /*distancia desde la izquierda*/
+    left: 50px;
+    /*Color de fondo, rgba con opacidad*/
+    background-color: rgba(241, 240, 226, 0.9);
+    /*redondeando el  boton*/
+    border-radius:25px;
+    /*margen por dentro del boton*/
+    padding:10px 15px;
+    /*quitando las lineas del hipervinculo*/
+    text-decoration: none;
+    /*color de texto*/
+    color: black;
+    font-weight: 700;
+}
+
+/*Configurando el botón del slider.*/
+.slider_section .link2 {
+    /*Otorgando posicion relativa para ajustar a nuestro gusto el boton dentro del slider*/
+    position: relative;
+    /*Distancia desde el bottom*/
+    bottom: 50px;
+    /*distancia desde la izquierda*/
+    left: 50px;
+    /*Color de fondo, rgba con opacidad*/
+    background-color: rgba(241, 240, 226, 0.9);
+    /*redondeando el  boton*/
+    border-radius:25px;
+    /*margen por dentro del boton*/
+    padding:10px 15px;
+    /*quitando las lineas del hipervinculo*/
+    text-decoration: none;
+    /*color de texto*/
+    color: black;
+    font-weight: 700;
+}
+
+/*Configurando el botón del slider.*/
+.slider_section .link3 {
+    /*Otorgando posicion relativa para ajustar a nuestro gusto el boton dentro del slider*/
+    position: relative;
+    /*Distancia desde el bottom*/
+    bottom: 50px;
+    /*distancia desde la izquierda*/
+    left: 50px;
+    /*Color de fondo, rgba con opacidad*/
+    background-color: rgba(241, 240, 226, 0.9);
+    /*redondeando el  boton*/
+    border-radius:25px;
+    /*margen por dentro del boton*/
+    padding:10px 15px;
+    /*quitando las lineas del hipervinculo*/
+    text-decoration: none;
+    /*color de texto*/
+    color: black;
+    font-weight: 700;
+}
+
+/*Configurando el titulo h1*/
+.tituloIntereses h1 {
+    /*tipo de fuente*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*Sombra del texto*/
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/*Ajustando toda la sección del slider con todos sus contenidos*/
+.container-slider {
+    /*Otorgando un ancho del 90% de la pantalla*/
+    width: 90%;
+
+    /*Otorgando un ancho máximo de 900px*/
+    max-width: 900px;
+
+    /*Centramos las imagenes*/
+    margin: auto;
+   
+    /*Todo el contenido que salga de nuestra widh de la seccion, se ocultará, en este caso, se pone una imagen encima de la otra.*/
+    overflow: hidden; 
+
+    /*Otorgando sombreado a nuestro slider*/
+    box-shadow: 0 0 0 10px #fff,
+                0 15px 50px;
+
+    /*Separando de nuestro header*/
+    margin-top: 30px;
+
+    position: relative;
+}
+
+/*Configurando la clase slider*/
+.slider {
+    /*Mostrando de manera flex, con esto, las imágenes se irán hacia un lado ocupando el ancho máximo*/
+    display: flex;
+
+    /*Otorgando un ancho del 400%, debido a que cada imagen tendrá un ancho de 100%, para que cada imagen no pase hacia abajo debido al display flex*/
+    /*En este slider son 4 imagenes que cada una ocupa el 100%, por lo tanto, se le otorga un 400%.*/
+    width: 300%;
+
+    /*Altura de 400px*/
+    height: 300px;
+
+    margin-left: -100%;
+}
+
+/*Slider seccion es el contenido de la etiqueta slider*/
+.slider_section {
+    /*Ocupando un 100% de ancho de la seccion*/
+    width: 100%;
+}
+
+/*Configurnado las imagenes de la clase slider*/
+.slider img {
+    /*Bloqueando las imágenes*/
+    display: block;
+    /*Otorgando un 100% del ancho permitido*/
+    width: 100%;
+    /*Otorgando un 100% de la altura permitida*/
+    height: 100%;
+    /*Con esto nuestras imágenes no se estirarán*/
+    object-fit: cover;
+}
+
+/*configurando nuestros botones (incluye ambos)*/
+.slider_btn {
+    /*Esto nos permite poder configurar el lugar donde queremos que estén nuestros botones.*/
+    position: absolute;
+    /*Otorogando un ancho a nuestros botones*/
+    width: 40px;
+    /*Otorgando un alto a nuestros botones*/
+    height: 40px;
+    /*Otorgando un color a nuestro fondo de los botones, color blanco con 70& de opacidad*/
+    background: rgba(255, 255, 255, 0.7);
+    /*Con esto, nuestros botones se irán un 50% hacia la cabecera de nuestro slider, es decir, a la mitad*/
+    top: 50%;
+    /*Con este transform translateY, movemos en el eje y nuestros botones*/
+    transform: translateY(-50%);  
+    /*Dando 30px de tamaño*/
+    font-size: 30px;
+    /*Negrita*/
+    font-weight: bold;
+    /*Tipo de fuente*/
+    font-family: monospace;
+    /*Centrando el texto en su pequeño contenido*/
+    text-align: center;
+    /*Dando un borde circular*/
+    border-radius: 50%;
+    /*Manito al pasar por encima*/
+    cursor: pointer;
+
+}
+
+/*Configurando la arrow izquierda (boton izquierdo)*/
+.slider_btn_left {
+    /*Con esto, tendrá 10px de distancia con el lado izquierdo*/
+    left: 10px;
+}
+/*configurando la arrow derecha (boton derecho)*/
+.slider_btn_right {
+    /*Con esto, se irá hacia el lado derecho, despegandose del botón izquierdo, con 10px*/
+    right: 10px;
+}
+
+/************************************************************************************************************************/
+
+/*Configurando el bloque de mis lenguajes, empezando por el box del titulo*/
+.tituloLenguajes {
+    /*dejando el display en flex, para que podamos acomodar los contenidos de manera flexible*/
+    display: flex;
+    /*ajustando el contenido de tituloLenguajes en el centro, de manera horizontal*/
+    justify-content: center;
+    /*otorgando un margen de 50 px con el bloque anterior*/
+    margin-top: 50px;
+}
+/*Configurando el texto h1 dentro del bloque de tituloLenguajes*/
+.tituloLenguajes h1 {
+    /*cambiando el tipo de fuente*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*configurando las imágenes del carrusel, otorgandoles un alto, ancho y una animación, que será configurada en keyframes.*/
+.carou img {
+    width: 100px;
+    height: 100px;
+    animation: scroll 60s linear infinite;
+}
+/* Configurando el contenido del carrusel*/
+.carruselContent {
+    /*Otorgando un display flex, para que se vea un logo al lado del otro*/
+    display: flex;
+    /*Otorgando separacion a cada uno de los logos*/
+    gap: 3em;
+    /*Evitando que lo que salga del bloque se vea*/
+    overflow: hidden;
+}
+/*configurando el bloque completo del carrusel*/  
+.bloqueCarrusel {
+    /*otorgando un margen arriba, para separarlo del bloque anterior*/
+    margin-top: 30px;
+    /*Otorgando un margen por dentro del bloque*/
+    padding: 15px 15px;
+}
+/*Configurnado keyframes, para otorgar movimiento al carrusel*/  
+@keyframes scroll {
+    /*moviendo en el eje x, generando un efecto de infinito*/
+    0% {transform: translateX(0);}
+    100% {transform: translatex(-1000%)}
+}
+
+
+/**************************************************************************************************************************************************/
+
+/*Configurando el bloque de mis conocimientos, empezando por el box del titulo*/
+.tituloConocimientos {
+    /*dejando el display en flex, para que podamos acomodar los contenidos de manera flexible*/
+    display: flex;
+    /*ajustando el contenido de tituloLenguajes en el centro, de manera horizontal*/
+    justify-content: center;
+    /*otorgando un margen de 50 px con el bloque anterior*/
+    margin-top: 50px;
+}
+
+/*Configurando el texto h1 dentro del bloque de tituloConocimientos*/
+.tituloConocimientos h1 {
+    /*cambiando el tipo de fuente*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*Sombra del texto*/
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/*Modificando div que pertenece al bloque Mis Conocimientos*/
+#conocimientos {
+    /*generando display flex para que los contenidos se vayan a un lado*/
+    display: flex;
+    /*generando margen por dentro del bloque */
+    padding: 15px;
+    /*generando margen por fuera del bloque*/
+    margin: 15px;
+    
+    justify-content: center;
+    /*alineando los contenidos hacia el centro*/
+    align-items: center;
+    /*sombra para el box*/
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/*modificando las etiquetas <li> ingresadas en javascript*/
+#conocimientos #listaConocimientos li {
+    /*color de texto*/
+    color: black;
+    /*tipo de fuente de texto*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*aplicando negrita al texto*/
+    font-weight: 700;
+}
+
+/**/
+
+/*Configurando el bloque de mis conocimientos, empezando por el box del titulo*/
+.validaRUT {
+    /*dejando el display en flex, para que podamos acomodar los contenidos de manera flexible*/
+    display: flex;
+    /*ajustando el contenido de tituloLenguajes en el centro, de manera horizontal*/
+    justify-content: center;
+    /*otorgando un margen de 50 px con el bloque anterior*/
+    margin-top: 50px;
+}
+
+/*Configurando el texto h1 dentro del bloque de validaRUT*/
+.validaRUT h1 {
+    /*cambiando el tipo de fuente*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*Sombra del texto*/
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*Configurando el box de nuestro formulario*/
+
+.box {
+    /*Color de fondo de nuestro box*/
+    background-color: white;
+    /*distancia por dentro del contenido*/
+    padding: 12px 20px;
+    /*borde redondo*/
+    border-radius: 5px;
+    /*sombra para el box*/
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.1);
+}
+
+/*Configurando todos nuestros input*/
+input {
+    /*Ancho de los input*/
+    width: 100%;
+    /*padding vertical y horizontal (por dentro)*/
+    padding: 12px 20px;
+    /*margen vertical y horizontal (por fuera)*/
+    margin: 8px 0px;
+    /*Generando un borde de 1px, solido y color #ccc*/
+    border: 1px solid #ccc;
+    /*Al tener seleccionado un input, genera un borde*/
+    box-sizing: border-box;
+    
+}
+button {
+    /*Padding vertical y horizontal*/
+    padding: 14px 20px;
+    /*Margen vertical y horizontal*/
+    margin: 8px 0px;
+    /*Cursor en forma de manito*/
+    cursor: pointer;
+    /*Ocupando el 100% del ancho del box (permitido)*/
+    width: 100%;
+}
